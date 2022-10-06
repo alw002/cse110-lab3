@@ -11,7 +11,7 @@
       <section>
         <h1>Group 99 Project Meeting</h1>
         <h2>Meeting Minutes #2</h2>
-        <h3>October 31, 1999</h3>
+        <h3>October 31, 2005 | 10AM - 12PM</h3>
         <a id="top"></a>
       </section>
     </header>
@@ -36,8 +36,10 @@
       <section>
         <h2>Opening Remarks</h2>
         <p>Although the amount of work has been <i>minimal</i> in the past weeks, please be aware that 
-           the coming weeks will be <em>comparatively more difficult</em>. This is a small reminder to 
-           be prepared and not be caught off gaurd.
+           the coming weeks will be <em>comparatively more difficult</em>. 
+           <br>This is a small reminder to 
+           be prepared and not be caught off gaurd. 
+           <br><h3>Have a happy Halloween!</h3>
         </p>
         <details>
           <summary>Comments, Questions, and Concerns</summary>
@@ -70,15 +72,79 @@
         </ol>
       </section>
       <hr>
-      <footer>
-        <h2>Potential Projects Presented</h2>
+      <section>
+        <h2>Potential Project Topics</h2>
         <h3>A.I. Chatbot</h3>
         <p>An idea brought up by Ander was a retrieval-based chatbot that would assist
            users of the university website. 
-           
+           <br>In theory, the user would enter a prompt and 
+           a response would be generated either answering their question or redirecting them
+           to another part of the website.
+           <br> Furthermore, it would allow for things that would
+           otherwise need a phone call to be automated by the bot.
         </p>
-        <img src="chatbot_overview.png" alt="Retreival Based Chatbot" width="1000" height="600">
-      </footer>
+        <h4>Chatbot Overview:</h4>
+        <img src="chatbot_overview.png" alt="Retreival Based Chatbot" width="1000" height="500">
+        <h3>Class Recommendation System</h3>
+        <p>An idea brought up by Angel was a system that would recommend classes based on the
+           classes you have already taken. <br>Ideally, there would be customizability for the user
+           to specify which classes to include/exclude, tags for certain topics, average hours per week,
+           average grade received, etc. 
+       </p>
+       <hr>
+       <h4>Role Assignment Audio Recording</h4>
+       <audio controls>
+        <source src="role_assignment.mp4" type="audio/mpeg">
+        Role assignment video
+       </audio>
+       <h4>Role Assignment Video Recording</h4>
+       <video width="320" height="240" controls>
+        <source src="role_assignment.mp4" type="video/mp4">
+        Role assignment video
+       </video>
+      </section>
     </main>
+      <hr>
+    <footer>
+      <h2>Meeting Assessment</h2>
+      <form>
+        <label for="fname">First Name:</label>
+        <input type="text" id="fname" name="fname">
+        <br>
+        <textarea id="comments" name="comments" rows="4" cols="50">Enter your comments, questions, and concerns here.</textarea>
+        <br>
+        <label for="ratings">How productive was the meeting out of 10?</label>
+        <select name='ratings' id="ratings">
+          <option value="10">10</option>
+          <option value="9">9</option>
+          <option value="8">8</option>
+          <option value="7">7</option>
+          <option value="6">6</option>
+          <option value="5">5</option>
+          <option value="4">4</option>
+          <option value="3">3</option>
+          <option value="2">2</option>
+          <option value="1">1</option>
+          </select>
+        <br>
+        <input type="submit" id="submit" name="submit">
+      </form>
+      <form>
+        <fieldset>
+          <label for="radio">radio</label>
+          <input type="radio" id="radio" name="radio">
+
+          <label for="checkbox">checkbox</label>
+          <input type="checkbox" id="checkbox" name="checkbox">
+
+          <label for="submit">submit</label>
+          <input type="submit" id="submit" name="submit">
+
+          <label for="button">button</label>
+          <input type="button" id="button" name="button">
+        </fieldset>
+      </form>
+      <nav><a href="#top">Top of Page</a></nav>
+    </footer>
   </body>
 </html>
