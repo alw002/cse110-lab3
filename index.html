@@ -108,7 +108,7 @@
     <footer>
       <h2>Meeting Assessment</h2>
       <form>
-        <label for="fname">First Name:</label>
+        <label for="fname">Full Name:</label>
         <input type="text" id="fname" name="fname">
         <br>
         <textarea id="comments" name="comments" rows="4" cols="50">Enter your comments, questions, and concerns here.</textarea>
@@ -127,6 +127,12 @@
           <option value="1">1</option>
           </select>
         <br>
+        <label for="idea">Choose your preferred project topic:</label>
+        <input list="ideas" id="idea">
+        <datalist id="ideas">
+          <option value="Chatbot">
+          <option value="Recommender system">
+        </datalist>
         <input type="submit">
       </form>
       <form>
@@ -136,9 +142,6 @@
 
           <label for="checkbox">checkbox</label>
           <input type="checkbox" id="checkbox">
-
-          <label for="submit">submit</label>
-          <input type="submit" id="submit">
 
           <label for="button">button</label>
           <input type="button" id="button" value="Click Here">
