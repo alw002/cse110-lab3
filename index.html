@@ -10,18 +10,24 @@
   </head>
   <body>
     <header>
-      <section>
+      <section class="center">
         <h1>Group 99 Project Meeting</h1>
         <h2>Meeting Minutes #2</h2>
         <h3>October 31, 2005 | 10AM - 12PM</h3>
         <a id="top"></a>
       </section>
+      <div class = "nav_menu">
+        <a href = "#">List of Attendance</a>
+        <a href = "#">Opening Remarks</a>
+        <a href = "#">Summary of Agenda</a>
+        <a href = "#">Potential Project Topics</a>
+        <a href = "#">Meeting Assessment</a>
+      </div>
     </header>
-    <hr>
     <main>
       <section>
         <h2>List of Attendance</h2>
-        <h3>Present</h3>
+        <h3 id="test">Present</h3>
           <ul>
             <li>Alex W. <b>(Role TBD)</b></li>
             <li>Bilal S. <b>(Team Leader #1)</b></li>
@@ -32,6 +38,7 @@
         <h3>Absent</h3>
           <ul>
             <li>Arturo C. <b>(Role TBD)</b></li>
+            <li id="dropped">Erickson N. <b>(Team Leader #2)</b></li>
           </ul>
       </section>
       <hr>
@@ -108,7 +115,7 @@
     </main>
       <hr>
     <footer>
-      <h2>Meeting Assessment</h2>
+      <h2 class="center">Meeting Assessment</h2>
       <form>
         <label for="fname">Full Name:</label>
         <input type="text" id="fname" name="fname">
@@ -145,8 +152,8 @@
           <label for="checkbox">checkbox</label>
           <input type="checkbox" id="checkbox">
 
-          <label for="button">button</label>
-          <input type="button" id="button" value="Click Here">
+          <label for="my-button">button</label>
+          <input type="button" id="my-button" value="Click Here">
         </fieldset>
       </form>
       <nav><a href="#top">Top of Page</a></nav>
