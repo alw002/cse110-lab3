@@ -24,6 +24,7 @@ html {
     align-items: center;
     flex-direction: row;
     flex-wrap: wrap;
+    flex-basis: auto;
     display: flex;
 	position: fixed;
     width: 100%;
@@ -139,3 +140,20 @@ div {
     padding: 40px 40px 40px 4em;
     margin: auto;
 }
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+    gap: 15px 10px;
+    background-color: #2196F3;
+    padding: 10px;
+}
+
+.grid-item {
+    background-color: #666;
+    border: 1px ridge deeppink ;
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+  }
