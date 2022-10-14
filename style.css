@@ -7,13 +7,13 @@ html {
 
 @media screen and (max-width: 600px) {
     body {
-      color: blue;
+      color: rgb(0, 0, 255);
     }
   }
 
   @media screen and (min-width: 1921px) {
     body {
-      color: red;
+      color: hsl(20,30,40);
     }
   }
 
@@ -86,7 +86,6 @@ body {
 }
 /* Details */
 
-
 a[href*="top"] {
     color: blue;
 }
@@ -99,3 +98,44 @@ div {
     display: inline-block;
     position: static;
 } 
+
+/* border short notation*/
+.box {
+    border-style: groove;
+    border-color: darkred;
+    border-width: 50px;
+    border-radius: 1em; 
+
+    padding: 0 30px 40px 4em;
+    margin: -40px, 30px, 40px, 3em;
+}
+/* border short notation*/
+
+/* border long notation*/
+.box2 {
+    border-top-width: 50px;
+    border-top-style: groove;
+    border-top-color: darkblue;
+    border-top-right-radius: 5em;
+
+    padding-top: 0;
+    padding-right: 30px;
+    padding-bottom: 40px;
+    padding-left: 4em;
+
+    margin-top: -40px;
+    margin-right: 30px;
+    margin-bottom: 40px;
+    margin-left: 4em;
+}
+/* border long notation*/
+
+.box3 {
+    border-style: ridge;
+    border-color: darksalmon;
+    border-width: 50px;
+    border-radius: 3em; 
+
+    padding: 40px 40px 40px 4em;
+    margin: auto;
+}
