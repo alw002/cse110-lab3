@@ -11,6 +11,12 @@ html {
     }
   }
 
+  @media screen and (min-width: 1921px) {
+    body {
+      color: red;
+    }
+  }
+
 /* Navigation menu */
 .nav_menu {
     background-color: #333;
@@ -84,3 +90,12 @@ body {
 a[href*="top"] {
     color: blue;
 }
+
+span {
+    display: inline;
+  }
+
+div {
+    display: inline-block;
+    position: static;
+} 
