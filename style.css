@@ -122,12 +122,12 @@ div {
     padding-top: 0;
     padding-right: 30px;
     padding-bottom: 40px;
-    padding-left: 4em;
+    padding-left: 4ch;
 
     margin-top: -40px;
     margin-right: 30px;
     margin-bottom: 40px;
-    margin-left: 4em;
+    margin-left: 4ex;
 }
 /* border long notation*/
 
