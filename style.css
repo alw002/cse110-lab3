@@ -2,23 +2,62 @@
 
 html {
     font-family: "Open Sans", serif;
+    scroll-behavior: smooth;
 }
+
+@media screen and (max-width: 600px) {
+    body {
+      color: rgb(0, 0, 255);
+    }
+  }
+
+  @media screen and (min-width: 1921px) {
+    body {
+      color: hsl(20,30,40);
+    }
+  }
 
 /* Navigation menu */
 .nav_menu {
-    overflow: hidden;
     background-color: #333;
-    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-basis: auto;
+    display: flex;
+	position: fixed;
+    width: 100%;
+    height: 50px;
+	z-index: 1;
+    top: 0;
+    left: 0;
+    right: 0;
 }
-.nav_menu a {
-    display: inline-block;
-    color: white;
-    padding: 14px 16px;
+.nav {
+    display: flex;
+    justify-content: right;
+    list-style: none;
+    margin-right: 15%;
+}
+
+.logo {
+    flex: 1 1 auto;
+    margin-left: 10%;
+    text-transform: uppercase;
+    letter-spacing: 1pt;
+
+}
+
+a {
+    margin: 1pc;
+    color: whitesmoke;
     text-decoration: none;
+    text-transform: uppercase;
 }
-.nav_menu a:hover {
-    background-color: white;
-    color: black;
+
+a:hover {
+    color: goldenrod;
 }
 /* Navigation menu */
 
@@ -35,7 +74,7 @@ body {
 }
 
 /* Details */
-#high {
+#high, fieldset :active {
     color: red;
 }
 
@@ -48,6 +87,89 @@ body {
 }
 /* Details */
 
-fieldset :active {
-    color: red;
+a[href*="top"] {
+    color: blue;
+}
+
+span {
+    display: inline;
   }
+
+div {
+    display: inline-block;
+    position: static;
+} 
+
+/* border short notation*/
+.box {
+    border-style: groove;
+    border-color: darkred;
+    border-width: 50px;
+    border-radius: 1em; 
+
+    padding: 0 30px 40px 4em;
+    margin: -40px, 30px, 40px, 3em;
+}
+/* border short notation*/
+
+/* border long notation*/
+.box2 {
+    border-top-width: 50px;
+    border-top-style: groove;
+    border-top-color: darkblue;
+    border-top-right-radius: 5em;
+
+    padding-top: 0;
+    padding-right: 30px;
+    padding-bottom: 40px;
+    padding-left: 4ch;
+
+    margin-top: -40px;
+    margin-right: 30px;
+    margin-bottom: 40px;
+    margin-left: 4ex;
+}
+/* border long notation*/
+
+.box3 {
+    border-style: ridge;
+    border-color: darksalmon;
+    border-width: 50px;
+    border-radius: 3em; 
+
+    padding: 40px 40px 40px 4em;
+    margin: auto;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+    gap: 15px 10px;
+    background-color: #2196F3;
+    padding: 10px;
+}
+
+.grid-item {
+    background-color: #666;
+    border: 1px ridge deeppink ;
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+  }
+
+div > p {
+    background-color: yellow;
+}
+
+div + p {
+    background-color: blue;
+}
+
+div ~ p {
+    background-color: orange;
+  }
+
+div.p {
+    background-color: sienna;
+}
